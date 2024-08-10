@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#1976D2</color> <!-- Синій основний -->
+    <color name="colorPrimaryVariant">#1565C0</color> <!-- Темніший синій -->
+    <color name="colorOnPrimary">#FFFFFF</color> <!-- Білий на синьому -->
+
+    <!-- Secondary Colors -->
+    <color name="colorSecondary">#03A9F4</color> <!-- Яскравий синій -->
+    <color name="colorSecondaryVariant">#0288D1</color> <!-- Темніший яскравий синій -->
+    <color name="colorOnSecondary">#FFFFFF</color> <!-- Білий на яскравому синьому -->
+    <color name="colorPassword">#81D4FA</color>
+
+    <!-- Background and Surface -->
+    <color name="colorBackground">#A6C9D7</color> <!-- Білий фон -->
+    <color name="colorSurface">#F5F5F5</color> <!-- Світло-сірий для поверхні -->
+    <color name="colorOnBackground">#212121</color> <!-- Темно-сірий текст на білому фоні -->
+    <color name="colorOnSurface">#212121</color> <!-- Темно-сірий текст на поверхні -->
+
+    <!-- Error Colors -->
+    <color name="colorError">#B00020</color> <!-- Червоний для помилок -->
+    <color name="colorOnError">#FFFFFF</color> <!-- Білий на червоному -->
+
+    <!-- Icon and Text Colors -->
+    <color name="colorIcon">#757575</color> <!-- Сірий для іконок -->
+    <color name="colorText">#212121</color> <!-- Темно-сірий текст -->
+
+    <!-- Additional Colors -->
+    <color name="colorDivider">#BDBDBD</color> <!-- Світло-сірий для ліній розділення -->
+
+</resources>

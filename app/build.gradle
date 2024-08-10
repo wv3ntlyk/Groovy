@@ -1,0 +1,86 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.jetbrains.kotlin.android)
+    id("com.chaquo.python")
+}
+
+android {
+    namespace 'com.vently.groovy'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.vently.groovy"
+        minSdk 30
+        targetSdk 34
+        versionCode 1
+        versionName "0.23"
+        ndk {
+            abiFilters "arm64-v8a" //,"x86_64"
+        }
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            applicationIdSuffix ".test"
+            versionNameSuffix "-test"
+            debuggable true
+        }
+    }
+
+    buildFeatures{
+        viewBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    flavorDimensions += "pyVersion"
+    productFlavors {
+        create("py") { dimension = "pyVersion" }
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def versionName = defaultConfig.versionName
+            def buildType = variant.buildType.name
+            def flavorName = variant.productFlavors[0]?.name ?: ""
+            def fileName = "Groovy-${flavorName}${buildType}-${versionName}.apk"
+            outputFileName = fileName
+        }
+    }
+}
+
+chaquopy {
+    productFlavors {
+        getByName("py") { version = "3.10" }
+    }
+
+    defaultConfig {
+        pip {
+            install("numpy")
+            install("requests")
+        }
+    }
+}
+
+
+
+dependencies {
+
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.appcompat
+    implementation libs.material
+    implementation libs.androidx.activity
+    implementation libs.androidx.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.junit
+    androidTestImplementation libs.androidx.espresso.core
+}
