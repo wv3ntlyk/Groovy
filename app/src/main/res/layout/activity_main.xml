@@ -25,6 +25,9 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:labelVisibilityMode="selected"
+        android:background="@color/blackWhite"
+        app:itemTextColor="@color/whiteBlack"
+        app:itemIconTint="@color/whiteBlack"
         app:itemActiveIndicatorStyle="@style/App.Custom.Indicator"
         app:menu="@menu/bottom_nav" />
 

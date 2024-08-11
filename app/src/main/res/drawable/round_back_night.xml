@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/colorSurface"/>
-    <corners android:radius="100dp"/>
-</shape>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- State when the item is selected (e.g., checked, pressed) -->
+    <item android:state_checked="false">
+        <shape>
+            <solid android:color="@color/white"/>
+            <corners android:radius="100dp"/>
+        </shape>
+    </item>
+
+    <!-- Default state (unselected) -->
+    <item>
+        <shape>
+            <solid android:color="@color/black"/>
+            <corners android:radius="100dp"/>
+        </shape>
+    </item>
+
+</selector>

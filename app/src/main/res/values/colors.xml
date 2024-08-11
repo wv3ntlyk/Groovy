@@ -27,6 +27,9 @@
     <color name="colorIcon">#757575</color> <!-- Сірий для іконок -->
     <color name="colorText">#212121</color> <!-- Темно-сірий текст -->
 
+    <color name="whiteBlack">#000</color>
+    <color name="blackWhite">#FFF</color>
+
     <!-- Additional Colors -->
     <color name="colorDivider">#BDBDBD</color> <!-- Світло-сірий для ліній розділення -->
 
