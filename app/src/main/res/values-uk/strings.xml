@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="outputPassword">| Пароль |</string>
+    <string name="generate_password">Генерація паролю</string>
+    <string name="web_site_name">Назва Вебсайту</string>
+    <string name="master_password">Е-Мейл</string>
+    <string name="length">Довжина</string>
+    <string name="generate">ЗГЕНЕРУВАТИ</string>
+    <string name="not_yet_introduced">Ще в розробці…</string>
+    <string name="soon">Скоро…</string>
+    <string name="hint">*</string>
+    <string name="home">Головна</string>
+    <string name="settings">Налаштування</string>
+    <string name="night_mode">Нічний режим</string>
+    <string name="saved">Збережено</string>
+</resources>

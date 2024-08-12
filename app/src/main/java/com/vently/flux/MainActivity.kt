@@ -1,4 +1,4 @@
-package com.vently.groovy
+package com.vently.flux
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -6,7 +6,7 @@ import android.view.animation.Animation
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.vently.groovy.databinding.ActivityMainBinding
+import com.vently.flux.databinding.ActivityMainBinding
 import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatDelegate
 

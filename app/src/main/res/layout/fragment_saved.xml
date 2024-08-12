@@ -12,6 +12,7 @@
         android:layout_height="match_parent"
         android:text="@string/soon"
         android:gravity="center"
+        style="@style/FontBold"
         android:textSize="36sp"/>
 
 </FrameLayout>

@@ -21,8 +21,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/settings"
                 android:layout_centerInParent="true"
-                
-                android:textStyle="bold"
+                style="@style/FontBold"
                 android:textSize="18sp"/>
         </RelativeLayout>
 
@@ -71,7 +70,7 @@
                             android:layout_toEndOf="@+id/nightModeIcon"
                             android:text="@string/night_mode"
                             android:textColor="@color/colorText"
-                            android:textStyle="bold" />
+                            style="@style/FontSemiBold" />
 
                         <androidx.appcompat.widget.SwitchCompat
                             android:id="@+id/themeSwitch"

@@ -1,4 +1,4 @@
-package com.vently.groovy
+package com.vently.flux
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -12,7 +12,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.chaquo.python.Python
 import com.chaquo.python.android.AndroidPlatform
-import com.vently.groovy.databinding.FragmentHomeBinding
+import com.vently.flux.databinding.FragmentHomeBinding
 
 class Home : Fragment() {
 

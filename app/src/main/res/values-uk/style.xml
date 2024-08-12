@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FontBold">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="FontLight">
+        <item name="android:fontFamily">@font/montserrat_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="FontSemiBold">
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="FontRegular">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+</resources>

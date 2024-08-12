@@ -1,4 +1,4 @@
-package com.vently.groovy
+package com.vently.flux
 
 import android.content.Context
 import android.content.SharedPreferences

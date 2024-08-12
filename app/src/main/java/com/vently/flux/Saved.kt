@@ -1,4 +1,4 @@
-package com.vently.groovy
+package com.vently.flux
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

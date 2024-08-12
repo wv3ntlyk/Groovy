@@ -16,6 +16,7 @@
 
     <!-- Background and Surface -->
     <color name="colorBackground">#343238</color> <!-- Темний фон -->
+    <color name="colorBackgroundDark">#504D56</color>  <!-- Темний колір фону -->
     <color name="colorSurface">#1E1E1E</color> <!-- Темна поверхня -->
     <color name="colorOnBackground">#FFFFFF</color> <!-- Білий текст на темному фоні -->
     <color name="colorOnSurface">#FFFFFF</color> <!-- Білий текст на темній поверхні -->

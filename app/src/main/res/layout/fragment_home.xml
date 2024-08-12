@@ -22,8 +22,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/home"
                 android:layout_centerInParent="true"
-
-                android:textStyle="bold"
+                style="@style/FontBold"
                 android:textSize="18sp"/>
         </RelativeLayout>
 
@@ -31,7 +30,6 @@
             android:id="@+id/cardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_marginHorizontal="24dp"
             android:layout_marginTop="20dp"
             app:cardCornerRadius="24dp"
@@ -48,7 +46,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/alexandria_bold"
+                    style="@style/FontBold"
                     android:text="@string/generate_password"
                     android:textSize="28sp"
                     android:textStyle="bold" />
@@ -57,7 +55,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:alpha="1"
-                    android:fontFamily="@font/alexandria_light"
+                    style="@style/FontLight"
                     android:text="@string/generate_password"
                     android:textSize="14sp" />
 
@@ -69,19 +67,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:alpha="1"
-                    android:fontFamily="@font/alexandria_semibold"
                     android:text="@string/web_site_name"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
+                    style="@style/FontSemiBold"
+                    android:textSize="14sp"/>
 
                 <EditText
                     android:id="@+id/siteInput"
+                    style="@style/FontRegular"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableEnd="@drawable/password_eye"
-                    android:fontFamily="@font/alexandria"
                     android:hint="@string/hint"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:minHeight="48dp" />
 
                 <View
                     android:layout_width="wrap_content"
@@ -91,19 +89,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:alpha="1"
-                    android:fontFamily="@font/alexandria_semibold"
+                    style="@style/FontSemiBold"
                     android:text="@string/master_password"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/masterPasswordInput"
+                    style="@style/FontRegular"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableEnd="@drawable/key"
-                    android:fontFamily="@font/alexandria"
                     android:hint="@string/hint"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:minHeight="48dp" />
 
                 <View
                     android:layout_width="wrap_content"
@@ -113,19 +112,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:alpha="1"
-                    android:fontFamily="@font/alexandria_semibold"
+                    style="@style/FontSemiBold"
                     android:text="@string/length"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/passLengthInput"
+                    style="@style/FontRegular"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableEnd="@drawable/length"
-                    android:fontFamily="@font/alexandria"
                     android:hint="@string/hint"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:minHeight="48dp" />
 
                 <View
                     android:layout_width="match_parent"
@@ -135,7 +135,7 @@
                     android:id="@+id/generateButton"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:fontFamily="@font/alexandria_semibold"
+                    style="@style/FontSemiBold"
                     android:text="@string/generate"
                     android:textSize="14sp"
                     app:cornerRadius="4dp" />
@@ -154,10 +154,9 @@
                         android:id="@+id/generatedPassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-    android:text="@string/outputPassword"
-
+                        android:text="@string/outputPassword"
                         android:layout_gravity="center_vertical"
-                        android:fontFamily="@font/alexandria_bold"
+                        style="@style/FontBold"
                         android:textAlignment="center"
                         android:textSize="14sp"
                         tools:ignore="RtlCompat" />
