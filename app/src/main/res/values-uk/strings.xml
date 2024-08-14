@@ -13,4 +13,8 @@
     <string name="settings">Налаштування</string>
     <string name="night_mode">Нічний режим</string>
     <string name="saved">Збережено</string>
+
+    <string name="fill_fields">Заповніть усі поля</string>
+    <string name="copied">Скопійовано в буфер обміну</string>
+
 </resources>

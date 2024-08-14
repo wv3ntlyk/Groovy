@@ -2,7 +2,7 @@
 <!-- res/color/switch_thumb_color.xml -->
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- State when the switch is checked -->
-    <item android:state_checked="true" android:color="#FFFFFF"/> <!-- White color when checked -->
+    <item android:state_checked="true" android:color="#DEDEDE"/> <!-- White color when checked -->
     <!-- State when the switch is unchecked -->
-    <item android:state_checked="false" android:color="#000000"/> <!-- Default color when unchecked -->
+    <item android:state_checked="false" android:color="#242424"/> <!-- Default color when unchecked -->
 </selector>

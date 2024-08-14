@@ -42,7 +42,7 @@ class Home : Fragment() {
             val passLength = binding.passLengthInput.text.toString().toIntOrNull() ?: 12 // За замовчуванням 12
 
             if (site.isEmpty() || masterPassword.isEmpty()) {
-                Toast.makeText(requireContext(), "Заповніть усі поля", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), getString(R.string.fill_fields), Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
@@ -81,7 +81,7 @@ class Home : Fragment() {
         val clipboard = requireContext().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
         val clip = ClipData.newPlainText("label", text)
         clipboard.setPrimaryClip(clip)
-        Toast.makeText(requireContext(), "Пароль скопійовано в буфер обміну", Toast.LENGTH_SHORT).show()
+        Toast.makeText(requireContext(), getString(R.string.copied), Toast.LENGTH_SHORT).show()
     }
 
     override fun onDestroyView() {

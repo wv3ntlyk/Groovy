@@ -14,4 +14,7 @@
     <string name="settings">Settings</string>
     <string name="night_mode">Night Mode</string>
     <string name="saved">Saved</string>
+
+    <string name="fill_fields">Fill all fields</string>
+    <string name="copied">Copied to clipboard</string>
 </resources>

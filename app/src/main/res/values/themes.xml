@@ -13,7 +13,7 @@
 
         <!-- Status bar color -->
         <item name="android:statusBarColor">@color/colorBackground</item>
-        <item name="android:navigationBarColor">@color/colorBackgroundDark</item>
+        <item name="android:navigationBarColor">@color/colorBackground</item>
         <item name="android:windowLightStatusBar">true</item>
 
         <!-- Background and Surface -->
@@ -41,6 +41,7 @@
 
     <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
         <item name="android:color">@android:color/transparent</item>
+        <item name="iconTint">#FFF</item>
     </style>
 
 </resources>

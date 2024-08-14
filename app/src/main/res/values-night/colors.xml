@@ -29,8 +29,10 @@
     <color name="colorIcon">#B0BEC5</color> <!-- Світло-сірий для іконок -->
     <color name="colorText">#FFFFFF</color> <!-- Білий текст -->
 
-    <color name="whiteBlack">#FFF</color>
-    <color name="blackWhite">#000</color>
+    <color name="whiteBlack">#000</color>
+    <color name="blackWhite">#FFF</color>
+
+    <color name="iconNav">#000</color>
 
     <!-- Additional Colors -->
     <color name="colorDivider">#373737</color>

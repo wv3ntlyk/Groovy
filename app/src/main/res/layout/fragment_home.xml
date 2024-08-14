@@ -26,145 +26,188 @@
                 android:textSize="18sp"/>
         </RelativeLayout>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="24dp"
-            android:layout_marginTop="20dp"
-            app:cardCornerRadius="24dp"
-            app:cardElevation="8dp">
+            android:layout_height="match_parent"
+            >
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="28dp"
-                android:background="@drawable/round_back_white"
-                android:backgroundTint="@color/colorPrimary">
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop=".2in"
+                android:layout_marginBottom=".4in"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    style="@style/FontBold"
-                    android:text="@string/generate_password"
-                    android:textSize="28sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:alpha="1"
-                    style="@style/FontLight"
-                    android:text="@string/generate_password"
-                    android:textSize="14sp" />
-
-                <View
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:alpha="1"
-                    android:text="@string/web_site_name"
-                    style="@style/FontSemiBold"
-                    android:textSize="14sp"/>
-
-                <EditText
-                    android:id="@+id/siteInput"
-                    style="@style/FontRegular"
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableEnd="@drawable/password_eye"
-                    android:hint="@string/hint"
-                    android:inputType="text"
-                    android:minHeight="48dp" />
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_back_white"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:orientation="vertical"
+                    android:padding="24dp">
 
-                <View
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:alpha="1"
-                    style="@style/FontSemiBold"
-                    android:text="@string/master_password"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/masterPasswordInput"
-                    style="@style/FontRegular"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableEnd="@drawable/key"
-                    android:hint="@string/hint"
-                    android:inputType="text"
-                    android:minHeight="48dp" />
-
-                <View
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:alpha="1"
-                    style="@style/FontSemiBold"
-                    android:text="@string/length"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/passLengthInput"
-                    style="@style/FontRegular"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableEnd="@drawable/length"
-                    android:hint="@string/hint"
-                    android:inputType="number"
-                    android:minHeight="48dp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/generateButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    style="@style/FontSemiBold"
-                    android:text="@string/generate"
-                    android:textSize="14sp"
-                    app:cornerRadius="4dp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp" />
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    app:cardBackgroundColor="@color/colorPassword"
-                    app:cardCornerRadius="4dp">
-
-                    <TextView
-                        android:id="@+id/generatedPassword"
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/outputPassword"
-                        android:layout_gravity="center_vertical"
-                        style="@style/FontBold"
-                        android:textAlignment="center"
+                        android:orientation="vertical"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            style="@style/FontBold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/generate_password"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/FontLight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:alpha="1"
+                            android:text="@string/generate_password"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="48dp"
+                        android:orientation="vertical"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                        tools:layout_editor_absoluteX="24dp">
+
+                        <TextView
+                            style="@style/FontSemiBold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:alpha="1"
+                            android:text="@string/web_site_name"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteY="117dp" />
+
+                        <EditText
+                            android:id="@+id/siteInput"
+                            style="@style/FontRegular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/password_eye"
+                            android:hint="@string/hint"
+                            android:inputType="text"
+                            android:minHeight="48dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="vertical"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                        tools:layout_editor_absoluteX="24dp">
+
+                        <TextView
+                            style="@style/FontSemiBold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:alpha="1"
+                            android:text="@string/master_password"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/masterPasswordInput"
+                            style="@style/FontRegular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/key"
+                            android:hint="@string/hint"
+                            android:inputType="text"
+                            android:minHeight="48dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="vertical"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                        tools:layout_editor_absoluteX="24dp">
+
+                        <TextView
+                            style="@style/FontSemiBold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:alpha="1"
+                            android:text="@string/length"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/passLengthInput"
+                            style="@style/FontRegular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/length"
+                            android:hint="@string/hint"
+                            android:inputType="number"
+                            android:minHeight="48dp" />
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/generateButton"
+                        style="@style/FontSemiBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:text="@string/generate"
                         android:textSize="14sp"
-                        tools:ignore="RtlCompat" />
-                </androidx.cardview.widget.CardView>
+                        app:cornerRadius="4dp"
+                        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+                        app:layout_constraintVertical_bias="0.236"
+                        tools:layout_editor_absoluteX="32dp" />
 
-            </LinearLayout>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="4dp"
+                        app:cardBackgroundColor="@color/colorPassword"
+                        app:cardCornerRadius="4dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        tools:layout_editor_absoluteX="32dp">
 
-        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:id="@+id/generatedPassword"
+                            style="@style/FontBold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/outputPassword"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            tools:ignore="RtlCompat" />
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </LinearLayout>

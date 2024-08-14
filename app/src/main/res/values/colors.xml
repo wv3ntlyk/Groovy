@@ -15,7 +15,7 @@
 
     <!-- Background and Surface -->
     <color name="colorBackground">#A6C9D7</color> <!-- Білий фон -->
-    <color name="colorBackgroundDark">#80B2C6</color> <!-- Також білий фон, але темніший -->
+    <color name="colorBackgroundDark">#93b3bf</color> <!-- Також білий фон, але темніший -->
     <color name="colorSurface">#F5F5F5</color> <!-- Світло-сірий для поверхні -->
     <color name="colorOnBackground">#212121</color> <!-- Темно-сірий текст на білому фоні -->
     <color name="colorOnSurface">#212121</color> <!-- Темно-сірий текст на поверхні -->
@@ -28,8 +28,10 @@
     <color name="colorIcon">#757575</color> <!-- Сірий для іконок -->
     <color name="colorText">#212121</color> <!-- Темно-сірий текст -->
 
-    <color name="whiteBlack">#000</color>
-    <color name="blackWhite">#FFF</color>
+    <color name="whiteBlack">#FFF</color>
+    <color name="blackWhite">#242424</color>
+
+    <color name="iconNav">#336070</color>
 
     <!-- Additional Colors -->
     <color name="colorDivider">#BDBDBD</color> <!-- Світло-сірий для ліній розділення -->
